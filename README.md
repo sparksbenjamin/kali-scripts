@@ -7,7 +7,6 @@ This is a collection of scripts used while doing differnt ctf's
 ## Scan.sh
 This will do some basic recon and generate files for later review of the machine. This does a simple port check with massscan then takes those ports and runs a full nmap scan on the open ports. 
 ```
-wget https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/scan.sh?token=GHSAT0AAAAAACSVEWTHZ2H7EYRCCHNDW6UEZTBCD3A
 ./scan.sh $IP_ADDRESS
 
 ```
@@ -192,11 +191,3 @@ Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-19 16:11 EDT
 > #### Notes
 > - This only scans the default UDP ports. Add `-p-` as an argument to scan all ports.
 > - Uses `sudo` to get the privileges required for a UDP scan
-
-# Scan.sh
-This will do some basic recon and generate files for later review of the machine.
-```
-wget https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/scan.sh?token=GHSAT0AAAAAACSVEWTHZ2H7EYRCCHNDW6UEZTBCD3A
-./scan.sh $IP_ADDRESS
-
-```

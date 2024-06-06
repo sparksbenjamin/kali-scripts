@@ -8,7 +8,12 @@ This is a collection of scripts used while doing differnt ctf's
 This will do some basic recon and generate files for later review of the machine. This does a simple port check with massscan then takes those ports and runs a full nmap scan on the open ports. 
 ```
 ./scan.sh $IP_ADDRESS
-
+```
+## generate_usernames.py
+This will prompt you for First Name, Last Name and Middle name.  It will generate some standard usernames using that information
+### Useage
+```
+python generate_usernames.py
 ```
 # Aliases
 ## Misc

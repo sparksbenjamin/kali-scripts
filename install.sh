@@ -21,9 +21,9 @@ if [ -f "$DIR_NAME/$ALIASES_FILE" ]; then
     echo "Found $ALIASES_FILE in the repository."
 
     # Check if .zshrc already sources this aliases file
-    if ! grep -q "source ~/$DIR_NAME/$ALIASES_FILE" $ZSHRC_FILE; then
+    if ! grep -q "source $DIR_NAME/$ALIASES_FILE" $ZSHRC_FILE; then
         echo "Sourcing $ALIASES_FILE in .zshrc."
-        echo "source ~/$DIR_NAME/$ALIASES_FILE" >> $ZSHRC_FILE
+        echo "source $DIR_NAME/$ALIASES_FILE" >> $ZSHRC_FILE
     else
         echo "$ALIASES_FILE is already sourced in .zshrc."
     fi

@@ -10,7 +10,9 @@ ls_pwd() {
 mkdir_cd() {
   mkdir $1 && cd $_
 }
-
+update() {
+  sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove
+}
 alias www="list_ips && ls_pwd && sudo python3 -m http.server 80"
 alias tun0="ifconfig tun0 | grep 'inet ' | cut -d' ' -f10 | tr -d '\n' | xclip -sel clip"
 

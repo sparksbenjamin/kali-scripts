@@ -2,7 +2,12 @@
 
 
 This is a collection of scripts used while doing differnt ctf's
+# Install
+This will install the scripts and setup requeired software from a base kali install. 
 
+```
+sh -c "$(curl) -fsSL https://github.com/sparksbenjamin/kali-scripts/blob/master/install.sh"
+```
 # Scripts
 ## Scan.sh
 This will do some basic recon and generate files for later review of the machine. This does a simple port check with massscan then takes those ports and runs a full nmap scan on the open ports. 

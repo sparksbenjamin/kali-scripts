@@ -6,7 +6,7 @@ This is a collection of scripts used while doing differnt ctf's
 This will install the scripts and setup requeired software from a base kali install. 
 
 ```
-sh -c "curl -fsSL https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/install.sh"
+curl -fsSL https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/install.sh | sh
 ```
 # Scripts
 ## Scan.sh

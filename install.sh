@@ -6,8 +6,6 @@ ZSHRC_FILE="$HOME/.zshrc"
 
 ## Install / update software
 echo "Installing / Updating Software"
-echo "Complete Distro Update"
-sudo sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove
 echo "SecLists (https://github.com/danielmiessler/SecLists)"
 sudo apt install seclists
 

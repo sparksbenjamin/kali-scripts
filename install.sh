@@ -1,9 +1,15 @@
-echo "Install SecLists (https://github.com/danielmiessler/SecLists)"
-sudo apt install seclists 
+
+ 
 REPO_URL="https://github.com/sparksbenjamin/kali-scripts.git"
 DIR_NAME="$HOME/kali-scripts"
 ALIASES_FILE="aliases.zsh"
 ZSHRC_FILE="$HOME/.zshrc"
+
+
+## Install / update software
+echo "Installing / Updating Software"
+echo "SecLists (https://github.com/danielmiessler/SecLists)"
+sudo apt install seclists
 
 # Check if the directory exists
 if [ -d "$DIR_NAME" ]; then

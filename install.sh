@@ -1,5 +1,3 @@
-
- 
 REPO_URL="https://github.com/sparksbenjamin/kali-scripts.git"
 DIR_NAME="$HOME/kali-scripts"
 ALIASES_FILE="aliases.zsh"
@@ -35,8 +33,8 @@ if [ -f "$DIR_NAME/$ALIASES_FILE" ]; then
     fi
 
     # Apply the changes immediately
-    #source $ZSHRC_FILE
-    source $HOME/.zshrc
+    source "$ZSHRC_FILE"
+    #source $HOME/.zshrc
 else
     echo "$ALIASES_FILE not found in the repository."
 fi

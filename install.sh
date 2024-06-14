@@ -33,8 +33,8 @@ if [ -f "$DIR_NAME/$ALIASES_FILE" ]; then
     fi
 
     # Apply the changes immediately
-    source "$ZSHRC_FILE"
-    #source $HOME/.zshrc
+    #source "$ZSHRC_FILE"
+    source "~/.zshrc"
 else
     echo "$ALIASES_FILE not found in the repository."
 fi

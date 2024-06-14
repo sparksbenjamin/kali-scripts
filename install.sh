@@ -1,4 +1,4 @@
-Echo "Install SecLists (https://github.com/danielmiessler/SecLists)"
+echo "Install SecLists (https://github.com/danielmiessler/SecLists)"
 sudo apt install seclists 
 REPO_URL="https://github.com/sparksbenjamin/kali-scripts.git"
 DIR_NAME="kali-scripts"

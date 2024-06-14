@@ -1,5 +1,5 @@
 Echo "Install SecLists (https://github.com/danielmiessler/SecLists)"
-sudo apt get install SecLists
+sudo apt install SecLists
 echo "Installing Aliases"
 wget "https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/aliases.zsh" ~/kali_aliases.zsh
 tee -a "source ~/kali_aliases.zsh" > ~/.zshrc

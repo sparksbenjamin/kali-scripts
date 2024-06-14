@@ -13,6 +13,9 @@ mkdir_cd() {
 update() {
   sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove
 }
+update-kali-scripts(){
+  curl -fsSL https://raw.githubusercontent.com/sparksbenjamin/kali-scripts/master/install.sh | sh
+}
 alias www="list_ips && ls_pwd && sudo python3 -m http.server 80"
 alias tun0="ifconfig tun0 | grep 'inet ' | cut -d' ' -f10 | tr -d '\n' | xclip -sel clip"
 

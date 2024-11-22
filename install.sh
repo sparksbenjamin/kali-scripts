@@ -5,9 +5,11 @@ ZSHRC_FILE="$HOME/.zshrc"
 
 
 ## Install / update software
-echo "Installing / Updating Software"
+echo "[!] Installing / Updating Software"
 echo "SecLists (https://github.com/danielmiessler/SecLists)"
 sudo apt install seclists
+echo "subfinder nuculei"
+sudo apt install subfinder nuclei
 
 # Check if the directory exists
 if [ -d "$DIR_NAME" ]; then

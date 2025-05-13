@@ -10,6 +10,21 @@ echo "SecLists (https://github.com/danielmiessler/SecLists)"
 sudo apt install seclists
 echo "subfinder nuculei"
 sudo apt install subfinder nuclei
+echo "Installing python3.11"
+cd /tmp
+wget https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz
+tar -xf Python-3.11.9.tgz
+cd Python-3.11.9
+./configure --enable-optimizations --prefix=/opt/python3.11
+make -j$(nproc)
+sudo make altinstall
+cd ~
+echo "Setting up openconnect-sso"
+/opt/python3.11/bin/python3.11 -m venv ~/vpn_env311
+sudo apt install libxml2-dev libxslt-dev python3-dev build-essential zlib1g-dev libxslt1-dev gcc
+source vpn_env311/bin/activate
+pip install "openconnect-sso[full]"
+
 
 # Check if the directory exists
 if [ -d "$DIR_NAME" ]; then

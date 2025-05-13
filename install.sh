@@ -24,7 +24,8 @@ echo "Setting up openconnect-sso"
 sudo apt install libxml2-dev libxslt-dev python3-dev build-essential zlib1g-dev libxslt1-dev gcc
 source vpn_env311/bin/activate
 pip install "openconnect-sso[full]"
-
+echo "Installing Brave"
+curl -fsS https://dl.brave.com/install.sh | sh
 
 # Check if the directory exists
 if [ -d "$DIR_NAME" ]; then

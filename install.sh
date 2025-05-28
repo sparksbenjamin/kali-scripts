@@ -16,6 +16,8 @@ sudo wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/dat
 cd ~
 echo "subfinder nuculei naabu"
 sudo apt install subfinder nuclei naabu
+echo "Installing waymore"
+sudo pipx waymore
 echo "Installing python3.11"
 cd /tmp
 wget https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz

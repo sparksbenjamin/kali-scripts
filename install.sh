@@ -8,8 +8,14 @@ ZSHRC_FILE="$HOME/.zshrc"
 echo "[!] Installing / Updating Software"
 echo "SecLists (https://github.com/danielmiessler/SecLists)"
 sudo apt install seclists
-echo "subfinder nuculei"
-sudo apt install subfinder nuclei
+echo "Getting Wordlists"
+cd /usr/share/wordlists
+sudo mkdir assetnote
+cd assetnote
+sudo wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=off
+cd ~
+echo "subfinder nuculei naabu"
+sudo apt install subfinder nuclei naabu
 echo "Installing python3.11"
 cd /tmp
 wget https://www.python.org/ftp/python/3.11.9/Python-3.11.9.tgz

@@ -14,8 +14,8 @@ sudo mkdir assetnote
 cd assetnote
 sudo wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=off
 cd ~
-echo "subfinder nuculei naabu"
-sudo apt install subfinder nuclei naabu
+echo "subfinder nuculei naabu dnsx"
+sudo apt install subfinder nuclei naabu dnsx
 echo "Installing waymore"
 sudo pipx waymore
 echo "Installing python3.11"
